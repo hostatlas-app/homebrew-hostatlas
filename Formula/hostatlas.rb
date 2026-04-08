@@ -6,7 +6,7 @@
 
 class Hostatlas < Formula
   desc "Infrastructure monitoring CLI for HostAtlas"
-  homepage "https://hostatlas.com"
+  homepage "https://hostatlas.app"
   version "1.2.0"
   license :cannot_represent
 
