@@ -1,11 +1,11 @@
-# © Akyros Labs LLC. All rights reserved.
-# hello@akyroslabs.com
+# © 2026 HostAtlas Technologies LLC. All rights reserved.
+# hello@hostatlas.app
 #
-# Install: brew tap akyroslabs/hostatlas && brew install hostatlas
-# Or:      brew install akyroslabs/hostatlas/hostatlas
+# Install: brew tap hostatlas-app/hostatlas && brew install cli
+# Or:      brew install hostatlas-app/hostatlas/cli
 
-class Hostatlas < Formula
-  desc "Infrastructure monitoring CLI for HostAtlas"
+class Cli < Formula
+  desc "HostAtlas CLI — manage your infrastructure from the terminal"
   homepage "https://hostatlas.app"
   version "1.2.0"
   license :cannot_represent
