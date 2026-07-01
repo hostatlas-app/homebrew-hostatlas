@@ -7,26 +7,26 @@
 class Cli < Formula
   desc "HostAtlas CLI — manage your infrastructure from the terminal"
   homepage "https://hostatlas.app"
-  version "1.6.0"
+  version "1.6.1"
   license :cannot_represent
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://install.hostatlas.app/cli/v#{version}/hostatlas-darwin-arm64"
-      sha256 "6a2024cc1908a76dceeaba478a5090c6616507b474549bcf1efb99a6bd4d1a5f"
+      sha256 "1a5030e147451fcddb60da543269b205aa04be998d879db5af4b30c22fc3458d"
     else
       url "https://install.hostatlas.app/cli/v#{version}/hostatlas-darwin-amd64"
-      sha256 "501ae1f4fda320190933f74b57a987323222a7e49419cc974ad94cae23d7a5fa"
+      sha256 "a8cc27335ca7e165a17dca5fa877d308a02b09e8831acb16ac560ace9f9ebf93"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://install.hostatlas.app/cli/v#{version}/hostatlas-linux-arm64"
-      sha256 "20b05dd8ac5557be6849e6b220f0d601bf217d4c683f9e372c4729ef36484a52"
+      sha256 "42f7fde696b0f846ce84dd51d0b29487958a17e8d96a4f4203f6b7a898884496"
     else
       url "https://install.hostatlas.app/cli/v#{version}/hostatlas-linux-amd64"
-      sha256 "f1a2c26f524a9e8d7bb606485c839eead6180bee54e7c739f59aa7fb5f5923d7"
+      sha256 "97027681d896823c0f7cc0041ddf90a3eac125caf0266c7c775f6f1f6d38e06c"
     end
   end
 
