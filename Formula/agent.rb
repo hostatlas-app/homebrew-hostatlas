@@ -14,16 +14,16 @@
 class Agent < Formula
   desc "HostAtlas agent — on-host telemetry, auto-recovery, SSH gating"
   homepage "https://hostatlas.app"
-  version "1.1.1"
+  version "1.1.2"
   license "Apache-2.0"
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://install.hostatlas.app/agent/v#{version}/hostatlas-agent-linux-arm64"
-      sha256 "e528156802480de584d96efcfb68e025fbe059093c525aded111774abb8ec64b"
+      sha256 "77a6453e10a84052a266699721fc6fc0bd26148aba8530d1e88d4f32a89c42bc"
     elsif Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://install.hostatlas.app/agent/v#{version}/hostatlas-agent-linux-amd64"
-      sha256 "6d4e060d75667b930a9b4357c1f445cff455a3bd366d4d491a00d7e3d1d3ab18"
+      sha256 "d89d401c6b1494271af31a68b0f70cea4a9ab1a10f1117aa88eb005a76b21a59"
     end
   end
 
